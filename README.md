@@ -1,0 +1,1 @@
+NexGen BPO - Investor Ready Demo\n\nDeploy on Render:\n- Build: pip install -r requirements.txt\n- Start: gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:10000\n\nSet ELEVENLABS_API_KEY in Render environment variables.\n

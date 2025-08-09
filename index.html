@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NexGen BPO — AI Voice Agents</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="cookie" class="cookie" style="display:none">
+    <div>We use cookies to improve your experience. <a href="/privacy">Privacy Policy</a></div>
+    <div><button id="accept" class="btn small">Accept</button></div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="/static/images/logo.png" alt="NexGen logo" class="logo">
+        <div>
+          <h1 id="title">NexGen BPO</h1>
+          <div class="tag">Your complete backoffice — 24/7</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <button id="en" class="lang active">EN</button>
+        <button id="nl" class="lang">NL</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="left">
+        <h2 id="heroH">AI Voice Agents that scale your backoffice</h2>
+        <p id="heroP">White-label voice agents, appointment setting, customer support and sales closing — globally, in multiple languages.</p>
+        <div class="cta">
+          <button class="btn" id="pilot">Request Pilot</button>
+          <button class="btn ghost" id="demoBtn">Live Demo</button>
+        </div>
+        <ul class="features">
+          <li>Save up to <strong>80%</strong> on labour costs</li>
+          <li>24/7 availability — no sick days</li>
+          <li>GDPR-ready, white-label & partner options</li>
+        </ul>
+      </div>
+      <div class="right">
+        <img src="/static/images/hero_banner.png" class="hero-img" alt="Hero">
+      </div>
+    </section>
+
+    <section class="plans card">
+      <h3>Pricing</h3>
+      <div class="plan-grid">
+        <div class="plan"><h4>Starter</h4><p>200 min</p><div class="price">€49/mo</div></div>
+        <div class="plan popular"><h4>Pro</h4><p>1,000 min</p><div class="price">€99/mo</div></div>
+        <div class="plan"><h4>Enterprise</h4><p>5,000+ min</p><div class="price">Contact</div></div>
+      </div>
+    </section>
+
+    <section class="calculator card">
+      <h3>Plan Advisor</h3>
+      <div class="row">
+        <label>Inbound/month <input id="inbound" type="number" value="120"></label>
+        <label>Outbound/month <input id="outbound" type="number" value="80"></label>
+        <label>Avg length (min) <input id="length" type="number" value="3"></label>
+      </div>
+      <button id="calc" class="btn">Recommend</button>
+      <div id="rec"></div>
+    </section>
+
+    <section class="demo card">
+      <h3>Voice Demo</h3>
+      <div class="controls">
+        <select id="scenario">
+          <option value="outbound_dutch">Outbound — Dutch</option>
+          <option value="inbound_dutch">Inbound — Dutch</option>
+          <option value="appointment_plumber_nl">Appointment — Plumber (NL)</option>
+          <option value="sales_closer_en">Sales Closer — EN</option>
+        </select>
+        <select id="voiceSel"><option value="Bella">Bella</option></select>
+        <button id="play" class="btn">Play</button>
+      </div>
+      <audio id="player" controls></audio>
+      <div id="transcript"></div>
+    </section>
+
+    <section class="video card">
+      <h3>Pitch Video</h3>
+      <div class="video-place">Paste your YouTube short in the code later</div>
+    </section>
+
+    <section class="contact card">
+      <h3>Request Pilot</h3>
+      <form id="contactForm">
+        <input name="name" placeholder="Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <select name="plan"><option>Starter</option><option>Pro</option><option>Enterprise</option></select>
+        <textarea name="message" placeholder="Tell us about your use case"></textarea>
+        <button type="submit" class="btn">Send</button>
+        <div id="status"></div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 NexGen BPO — White-label AI Agents</div>
+      <div><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></div>
+    </footer>
+  </main>
+
+<script src="/static/main.js"></script>
+</body>
+</html>
