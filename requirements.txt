@@ -1,6 +1,6 @@
 fastapi
-uvicorn[standard]
-requests
-python-multipart
-aiofiles
+uvicorn
 gunicorn
+requests
+python-dotenv
+
